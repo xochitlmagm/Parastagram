@@ -20,7 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 $0.server = "https://stark-peak-49700.herokuapp.com/parse"
         }
         Parse.initialize(with: parseConfig)
+        
+//        if PFUser.current() != nil {
+//            let main = UIStoryboard(name: "Main", bundle: nil)
+//            let feedNavigationController = main.instantiateViewController(withIdentifier: "FeedNavigationController")
+//            
+//            window?.rootViewController = feedNavigationController
+//        }
         return true
+        
     }
 
     // MARK: UISceneSession Lifecycle
